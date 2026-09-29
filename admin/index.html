@@ -25,8 +25,12 @@
     --text:#f5f5f7;
     --muted:#858594;
     --muted-2:#5e5e6b;
-    --purple:#8b5cf6;
-    --indigo:#4f46e5;
+
+    /* VIXEL CYAN + BLUE IDENTITY */
+    --cyan:#22d3ee;
+    --blue:#2563ff;
+    --blue-deep:#315dff;
+
     --danger:#ef4444;
     --success:#4ade80;
     --radius:14px;
@@ -47,7 +51,7 @@ body{
     background:
         radial-gradient(
             circle at 75% -10%,
-            rgba(99,72,180,.13),
+            rgba(34,211,238,.10),
             transparent 32%
         ),
         var(--bg);
@@ -71,9 +75,8 @@ button{
 }
 
 ::selection{
-    background:rgba(139,92,246,.35);
+    background:rgba(34,211,238,.35);
 }
-
 
 /* =========================================================
    VIXEL LOGO
@@ -93,10 +96,9 @@ button{
 
 .logo-glow{
     filter:
-        drop-shadow(0 0 7px rgba(139,92,246,.25))
-        drop-shadow(0 0 15px rgba(79,70,229,.15));
+        drop-shadow(0 0 7px rgba(34,211,238,.25))
+        drop-shadow(0 0 15px rgba(37,99,255,.15));
 }
-
 
 /* =========================================================
    LOGIN
@@ -124,7 +126,7 @@ button{
     border-radius:20px;
     box-shadow:
         0 30px 100px rgba(0,0,0,.55),
-        0 0 70px rgba(99,72,180,.06);
+        0 0 70px rgba(34,211,238,.06);
 }
 
 .login-logo{
@@ -135,10 +137,10 @@ button{
     background:
         linear-gradient(
             145deg,
-            rgba(139,92,246,.13),
-            rgba(79,70,229,.06)
+            rgba(34,211,238,.13),
+            rgba(37,99,255,.06)
         );
-    border:1px solid rgba(139,92,246,.2);
+    border:1px solid rgba(34,211,238,.2);
     margin-bottom:25px;
 }
 
@@ -183,8 +185,8 @@ button{
 }
 
 .input:focus{
-    border-color:rgba(139,92,246,.65);
-    box-shadow:0 0 0 3px rgba(139,92,246,.09);
+    border-color:rgba(34,211,238,.65);
+    box-shadow:0 0 0 3px rgba(34,211,238,.09);
 }
 
 .primary-btn{
@@ -222,7 +224,6 @@ button{
     font-size:13px;
 }
 
-
 /* =========================================================
    APP
 ========================================================= */
@@ -230,7 +231,6 @@ button{
 #app{
     min-height:100vh;
 }
-
 
 /* SIDEBAR */
 
@@ -270,10 +270,10 @@ button{
     background:
         linear-gradient(
             145deg,
-            rgba(139,92,246,.14),
-            rgba(79,70,229,.05)
+            rgba(34,211,238,.14),
+            rgba(37,99,255,.05)
         );
-    border:1px solid rgba(139,92,246,.17);
+    border:1px solid rgba(34,211,238,.17);
 }
 
 .brand-name{
@@ -322,10 +322,10 @@ button{
     background:
         linear-gradient(
             90deg,
-            rgba(139,92,246,.13),
-            rgba(79,70,229,.045)
+            rgba(34,211,238,.13),
+            rgba(37,99,255,.045)
         );
-    border-color:rgba(139,92,246,.14);
+    border-color:rgba(34,211,238,.14);
     color:#fff;
 }
 
@@ -352,7 +352,6 @@ button{
     border-color:#393946;
     background:#13131a;
 }
-
 
 /* MAIN */
 
@@ -414,7 +413,6 @@ button{
     white-space:nowrap;
 }
 
-
 /* =========================================================
    DASHBOARD STATS
 ========================================================= */
@@ -448,7 +446,7 @@ button{
     right:-35px;
     bottom:-40px;
     border-radius:50%;
-    background:rgba(139,92,246,.08);
+    background:rgba(34,211,238,.08);
     filter:blur(20px);
 }
 
@@ -463,7 +461,6 @@ button{
     font-weight:800;
     letter-spacing:-1px;
 }
-
 
 /* =========================================================
    PAGES / SECTIONS
@@ -508,7 +505,6 @@ button{
     font-size:13px;
     margin-top:4px;
 }
-
 
 /* =========================================================
    BUTTONS
@@ -562,7 +558,6 @@ button{
     flex:1;
     min-width:75px;
 }
-
 
 /* =========================================================
    GAMES
@@ -660,11 +655,10 @@ button{
 }
 
 .badge.featured{
-    color:#c4b5fd;
-    border-color:rgba(139,92,246,.35);
-    background:rgba(139,92,246,.06);
+    color:#a5f3fc;
+    border-color:rgba(34,211,238,.35);
+    background:rgba(34,211,238,.06);
 }
-
 
 /* =========================================================
    APPLICATIONS
@@ -712,7 +706,7 @@ button{
 }
 
 .application-content a{
-    color:#c4b5fd !important;
+    color:#a5f3fc !important;
 }
 
 .status{
@@ -740,7 +734,6 @@ button{
     color:#c4c4ce;
     border-color:#3a3a46;
 }
-
 
 /* =========================================================
    FORMS
@@ -774,7 +767,7 @@ textarea.input{
 .checkbox-row input{
     width:16px;
     height:16px;
-    accent-color:var(--purple);
+    accent-color:var(--cyan);
 }
 
 .form-actions{
@@ -786,7 +779,6 @@ textarea.input{
 .form-actions button{
     flex:1;
 }
-
 
 /* =========================================================
    MESSAGES
@@ -816,7 +808,6 @@ textarea.input{
     color:#fca5a5;
     white-space:pre-wrap;
 }
-
 
 /* =========================================================
    ANNOUNCEMENT
@@ -854,7 +845,6 @@ textarea.input{
     color:#686874;
 }
 
-
 /* =========================================================
    EMPTY / LOADING
 ========================================================= */
@@ -866,7 +856,6 @@ textarea.input{
     font-size:13px;
     white-space:pre-wrap;
 }
-
 
 /* =========================================================
    MODAL
@@ -928,7 +917,6 @@ textarea.input{
 .close:hover{
     color:#fff;
 }
-
 
 /* =========================================================
    MOBILE
@@ -1040,8 +1028,8 @@ textarea.input{
                             y2="92"
                             gradientUnits="userSpaceOnUse"
                         >
-                            <stop stop-color="#A78BFA"/>
-                            <stop offset="1" stop-color="#4F46E5"/>
+                            <stop stop-color="#67E8F9"/>
+                            <stop offset="1" stop-color="#2563FF"/>
                         </linearGradient>
                     </defs>
 
@@ -1114,7 +1102,6 @@ textarea.input{
 
 </div>
 
-
 <!-- =======================================================
      APP
 ======================================================= -->
@@ -1139,8 +1126,8 @@ textarea.input{
                                 y2="95"
                                 gradientUnits="userSpaceOnUse"
                             >
-                                <stop stop-color="#A78BFA"/>
-                                <stop offset="1" stop-color="#4F46E5"/>
+                                <stop stop-color="#67E8F9"/>
+                                <stop offset="1" stop-color="#2563FF"/>
                             </linearGradient>
                         </defs>
 
@@ -1177,7 +1164,6 @@ textarea.input{
             </div>
 
         </div>
-
 
         <nav class="nav">
 
@@ -1224,7 +1210,6 @@ textarea.input{
 
         </nav>
 
-
         <button
             class="logout"
             onclick="logout()"
@@ -1233,7 +1218,6 @@ textarea.input{
         </button>
 
     </aside>
-
 
     <main class="main">
 
@@ -1263,7 +1247,6 @@ textarea.input{
             </div>
 
         </div>
-
 
         <!-- DASHBOARD -->
 
@@ -1328,7 +1311,6 @@ textarea.input{
 
             </div>
 
-
             <div class="section">
 
                 <div class="section-header">
@@ -1385,7 +1367,6 @@ textarea.input{
 
         </section>
 
-
         <!-- GAMES -->
 
         <section
@@ -1427,7 +1408,6 @@ textarea.input{
 
         </section>
 
-
         <!-- APPLICATIONS -->
 
         <section
@@ -1465,7 +1445,6 @@ textarea.input{
             </div>
 
         </section>
-
 
         <!-- ANNOUNCEMENTS -->
 
@@ -1569,7 +1548,6 @@ textarea.input{
 
         </section>
 
-
         <!-- SETTINGS -->
 
         <section
@@ -1653,7 +1631,6 @@ textarea.input{
     </main>
 
 </div>
-
 
 <!-- =======================================================
      GAME MODAL
@@ -1815,14 +1792,12 @@ textarea.input{
 
 </div>
 
-
 <script>
 const supabaseClient =
     window.supabase.createClient(
         SUPABASE_URL,
         SUPABASE_KEY
     );
-
 
 /* =========================================================
    HELPERS
@@ -1844,7 +1819,6 @@ function escapeHTML(value){
         .replace(/"/g,"&quot;")
         .replace(/'/g,"&#039;");
 }
-
 
 function safeUrl(value){
 
@@ -1880,7 +1854,6 @@ function safeUrl(value){
     return "";
 }
 
-
 function showMessage(
     elementId,
     text,
@@ -1906,7 +1879,6 @@ function showMessage(
         );
 }
 
-
 function hideMessage(elementId){
 
     const element =
@@ -1923,7 +1895,6 @@ function hideMessage(elementId){
     }
 }
 
-
 /* =========================================================
    NAVIGATION
 ========================================================= */
@@ -1938,17 +1909,14 @@ function showPage(page){
 
         });
 
-
     const target =
         document.getElementById(
             "page-" + page
         );
 
-
     if(target){
         target.classList.add("active");
     }
-
 
     document
         .querySelectorAll(".nav button")
@@ -1961,7 +1929,6 @@ function showPage(page){
 
         });
 
-
     const titles = {
         dashboard:"Dashboard",
         games:"Games",
@@ -1970,12 +1937,10 @@ function showPage(page){
         settings:"Website Settings"
     };
 
-
     document.getElementById(
         "pageTitle"
     ).textContent =
         titles[page] || "Dashboard";
-
 
     if(page === "dashboard"){
         loadDashboard();
@@ -1998,7 +1963,6 @@ function showPage(page){
     }
 }
 
-
 /* =========================================================
    AUTH
 ========================================================= */
@@ -2011,14 +1975,12 @@ async function checkAdmin(){
     } =
         await supabaseClient.auth.getUser();
 
-
     if(error || !user){
 
         showLogin();
 
         return false;
     }
-
 
     const {
         data:admin,
@@ -2029,7 +1991,6 @@ async function checkAdmin(){
             .select("id")
             .eq("id",user.id)
             .maybeSingle();
-
 
     if(adminError){
 
@@ -2046,7 +2007,6 @@ async function checkAdmin(){
 
         return false;
     }
-
 
     if(!admin){
 
@@ -2065,12 +2025,10 @@ async function checkAdmin(){
         return false;
     }
 
-
     showApp(user);
 
     return true;
 }
-
 
 function showLogin(){
 
@@ -2082,7 +2040,6 @@ function showLogin(){
         .getElementById("app")
         .classList.add("hidden");
 }
-
 
 function showApp(user){
 
@@ -2101,7 +2058,6 @@ function showApp(user){
 
     loadDashboard();
 }
-
 
 document
     .getElementById("loginForm")
@@ -2154,14 +2110,12 @@ document
         }
     );
 
-
 async function logout(){
 
     await supabaseClient.auth.signOut();
 
     showLogin();
 }
-
 
 /* =========================================================
    DASHBOARD
@@ -2185,19 +2139,16 @@ async function loadDashboard(){
 
         ]);
 
-
     const games =
         gamesResult.data || [];
 
     const applications =
         applicationsResult.data || [];
 
-
     document.getElementById(
         "statGames"
     ).textContent =
         games.length;
-
 
     document.getElementById(
         "statPublished"
@@ -2206,12 +2157,10 @@ async function loadDashboard(){
             game => game.published === true
         ).length;
 
-
     document.getElementById(
         "statApplications"
     ).textContent =
         applications.length;
-
 
     document.getElementById(
         "statPending"
@@ -2222,7 +2171,6 @@ async function loadDashboard(){
                     .toLowerCase() === "pending"
         ).length;
 }
-
 
 /* =========================================================
    GAMES
@@ -2235,10 +2183,8 @@ async function loadGames(){
             "gamesList"
         );
 
-
     container.innerHTML =
         '<div class="empty">Loading games...</div>';
-
 
     const {
         data,
@@ -2254,7 +2200,6 @@ async function loadGames(){
                 }
             );
 
-
     if(error){
 
         container.innerHTML =
@@ -2268,10 +2213,8 @@ async function loadGames(){
         return;
     }
 
-
     const games =
         data || [];
-
 
     if(games.length === 0){
 
@@ -2283,7 +2226,6 @@ async function loadGames(){
         return;
     }
 
-
     container.innerHTML =
         games.map(game => {
 
@@ -2292,7 +2234,6 @@ async function loadGames(){
 
             const roblox =
                 safeUrl(game.roblox_url);
-
 
             return `
 
@@ -2423,7 +2364,6 @@ async function loadGames(){
         }).join("");
 }
 
-
 function openGameModal(game = null){
 
     hideMessage("gameMessage");
@@ -2439,7 +2379,6 @@ function openGameModal(game = null){
     document.getElementById(
         "gameOrder"
     ).value = 0;
-
 
     if(game){
 
@@ -2496,12 +2435,10 @@ function openGameModal(game = null){
             "Add Game";
     }
 
-
     document
         .getElementById("gameModal")
         .classList.add("show");
 }
-
 
 function closeGameModal(){
 
@@ -2509,7 +2446,6 @@ function closeGameModal(){
         .getElementById("gameModal")
         .classList.remove("show");
 }
-
 
 async function editGame(id){
 
@@ -2523,7 +2459,6 @@ async function editGame(id){
             .eq("id",id)
             .maybeSingle();
 
-
     if(error){
 
         alert(
@@ -2534,7 +2469,6 @@ async function editGame(id){
         return;
     }
 
-
     if(!data){
 
         alert("Game not found.");
@@ -2542,10 +2476,8 @@ async function editGame(id){
         return;
     }
 
-
     openGameModal(data);
 }
-
 
 /* SAVE GAME */
 
@@ -2559,13 +2491,11 @@ document
 
             hideMessage("gameMessage");
 
-
             const id =
                 document
                     .getElementById("gameId")
                     .value
                     .trim();
-
 
             const gameData = {
 
@@ -2611,7 +2541,6 @@ document
                     ) || 0
             };
 
-
             if(!gameData.title){
 
                 showMessage(
@@ -2621,7 +2550,6 @@ document
 
                 return;
             }
-
 
             if(gameData.featured){
 
@@ -2639,7 +2567,6 @@ document
                             "00000000-0000-0000-0000-000000000000"
                         );
 
-
                 if(unfeatureError){
 
                     showMessage(
@@ -2652,9 +2579,7 @@ document
                 }
             }
 
-
             let error = null;
-
 
             if(id){
 
@@ -2678,7 +2603,6 @@ document
                     result.error;
             }
 
-
             if(error){
 
                 showMessage(
@@ -2690,13 +2614,11 @@ document
                 return;
             }
 
-
             showMessage(
                 "gameMessage",
                 "Game saved successfully.",
                 true
             );
-
 
             setTimeout(
                 async () => {
@@ -2714,7 +2636,6 @@ document
         }
     );
 
-
 async function togglePublished(
     id,
     current
@@ -2722,7 +2643,6 @@ async function togglePublished(
 
     const newValue =
         current !== true;
-
 
     const {
         error
@@ -2734,7 +2654,6 @@ async function togglePublished(
             })
             .eq("id",id);
 
-
     if(error){
 
         alert(
@@ -2745,12 +2664,10 @@ async function togglePublished(
         return;
     }
 
-
     await loadGames();
 
     await loadDashboard();
 }
-
 
 async function toggleFeatured(
     id,
@@ -2759,7 +2676,6 @@ async function toggleFeatured(
 
     const newValue =
         current !== true;
-
 
     if(newValue){
 
@@ -2773,7 +2689,6 @@ async function toggleFeatured(
                 })
                 .neq("id",id);
 
-
         if(unfeatureError){
 
             alert(
@@ -2785,7 +2700,6 @@ async function toggleFeatured(
         }
     }
 
-
     const {
         error
     } =
@@ -2795,7 +2709,6 @@ async function toggleFeatured(
                 featured:newValue
             })
             .eq("id",id);
-
 
     if(error){
 
@@ -2807,10 +2720,8 @@ async function toggleFeatured(
         return;
     }
 
-
     await loadGames();
 }
-
 
 async function deleteGame(id){
 
@@ -2822,7 +2733,6 @@ async function deleteGame(id){
         return;
     }
 
-
     const {
         error
     } =
@@ -2830,7 +2740,6 @@ async function deleteGame(id){
             .from("games")
             .delete()
             .eq("id",id);
-
 
     if(error){
 
@@ -2842,12 +2751,10 @@ async function deleteGame(id){
         return;
     }
 
-
     await loadGames();
 
     await loadDashboard();
 }
-
 
 /* =========================================================
    APPLICATIONS
@@ -2860,10 +2767,8 @@ async function loadApplications(){
             "applicationsList"
         );
 
-
     container.innerHTML =
         '<div class="empty">Loading applications...</div>';
-
 
     const {
         data,
@@ -2872,7 +2777,6 @@ async function loadApplications(){
         await supabaseClient
             .from("applications")
             .select("*");
-
 
     if(error){
 
@@ -2887,10 +2791,8 @@ async function loadApplications(){
         return;
     }
 
-
     const applications =
         data || [];
-
 
     if(applications.length === 0){
 
@@ -2902,7 +2804,6 @@ async function loadApplications(){
         return;
     }
 
-
     container.innerHTML =
         applications.map(app => {
 
@@ -2912,16 +2813,13 @@ async function loadApplications(){
                     "Pending"
                 );
 
-
             const statusClass =
                 status.toLowerCase();
-
 
             const portfolio =
                 safeUrl(
                     app.portfolio
                 );
-
 
             return `
 
@@ -2961,7 +2859,6 @@ async function loadApplications(){
 
                     </div>
 
-
                     <div class="application-content">
 
                         ${
@@ -2979,7 +2876,6 @@ async function loadApplications(){
                                 : ""
                         }
 
-
                         ${
                             app.reason
                                 ? `
@@ -2994,7 +2890,6 @@ async function loadApplications(){
                                 `
                                 : ""
                         }
-
 
                         ${
                             portfolio
@@ -3019,7 +2914,6 @@ async function loadApplications(){
 
                     </div>
 
-
                     <div
                         class="actions"
                         style="margin-top:15px"
@@ -3035,7 +2929,6 @@ async function loadApplications(){
                             Accept
                         </button>
 
-
                         <button
                             class="small-btn danger"
                             onclick="updateApplicationStatus(
@@ -3046,7 +2939,6 @@ async function loadApplications(){
                             Reject
                         </button>
 
-
                         <button
                             class="small-btn"
                             onclick="updateApplicationStatus(
@@ -3056,7 +2948,6 @@ async function loadApplications(){
                         >
                             Pending
                         </button>
-
 
                         <button
                             class="small-btn danger"
@@ -3076,7 +2967,6 @@ async function loadApplications(){
         }).join("");
 }
 
-
 async function updateApplicationStatus(
     id,
     status
@@ -3094,7 +2984,6 @@ async function updateApplicationStatus(
             })
             .eq("id",id);
 
-
     if(error){
 
         alert(
@@ -3105,12 +2994,10 @@ async function updateApplicationStatus(
         return;
     }
 
-
     await loadApplications();
 
     await loadDashboard();
 }
-
 
 async function deleteApplication(id){
 
@@ -3122,7 +3009,6 @@ async function deleteApplication(id){
         return;
     }
 
-
     const {
         error
     } =
@@ -3130,7 +3016,6 @@ async function deleteApplication(id){
             .from("applications")
             .delete()
             .eq("id",id);
-
 
     if(error){
 
@@ -3142,12 +3027,10 @@ async function deleteApplication(id){
         return;
     }
 
-
     await loadApplications();
 
     await loadDashboard();
 }
-
 
 /* =========================================================
    ANNOUNCEMENTS
@@ -3159,7 +3042,6 @@ async function loadAnnouncement(){
         "announcementMessage"
     );
 
-
     const {
         data,
         error
@@ -3169,7 +3051,6 @@ async function loadAnnouncement(){
             .select("*")
             .limit(1)
             .maybeSingle();
-
 
     if(error){
 
@@ -3181,7 +3062,6 @@ async function loadAnnouncement(){
 
         return;
     }
-
 
     if(!data){
 
@@ -3198,22 +3078,18 @@ async function loadAnnouncement(){
         return;
     }
 
-
     document.getElementById(
         "announcementText"
     ).value =
         data.message || "";
-
 
     document.getElementById(
         "announcementActive"
     ).checked =
         data.active === true;
 
-
     updateAnnouncementPreview();
 }
-
 
 function updateAnnouncementPreview(){
 
@@ -3222,14 +3098,12 @@ function updateAnnouncementPreview(){
             "announcementText"
         ).value.trim();
 
-
     document.getElementById(
         "announcementPreview"
     ).textContent =
         text ||
         "Your announcement will appear here.";
 }
-
 
 document
     .getElementById("announcementText")
@@ -3238,14 +3112,12 @@ document
         updateAnnouncementPreview
     );
 
-
 async function publishAnnouncement(){
 
     const text =
         document.getElementById(
             "announcementText"
         ).value.trim();
-
 
     if(!text){
 
@@ -3257,7 +3129,6 @@ async function publishAnnouncement(){
         return;
     }
 
-
     const {
         data:existing,
         error:findError
@@ -3267,7 +3138,6 @@ async function publishAnnouncement(){
             .select("id")
             .limit(1)
             .maybeSingle();
-
 
     if(findError){
 
@@ -3280,9 +3150,7 @@ async function publishAnnouncement(){
         return;
     }
 
-
     let result;
-
 
     if(existing){
 
@@ -3308,7 +3176,6 @@ async function publishAnnouncement(){
                 });
     }
 
-
     if(result.error){
 
         showMessage(
@@ -3320,11 +3187,9 @@ async function publishAnnouncement(){
         return;
     }
 
-
     document.getElementById(
         "announcementActive"
     ).checked = true;
-
 
     showMessage(
         "announcementMessage",
@@ -3332,7 +3197,6 @@ async function publishAnnouncement(){
         true
     );
 }
-
 
 async function hideAnnouncement(){
 
@@ -3346,7 +3210,6 @@ async function hideAnnouncement(){
             .limit(1)
             .maybeSingle();
 
-
     if(findError){
 
         showMessage(
@@ -3358,7 +3221,6 @@ async function hideAnnouncement(){
         return;
     }
 
-
     if(!existing){
 
         showMessage(
@@ -3368,7 +3230,6 @@ async function hideAnnouncement(){
 
         return;
     }
-
 
     const {
         error
@@ -3382,7 +3243,6 @@ async function hideAnnouncement(){
             })
             .eq("id",existing.id);
 
-
     if(error){
 
         showMessage(
@@ -3394,11 +3254,9 @@ async function hideAnnouncement(){
         return;
     }
 
-
     document.getElementById(
         "announcementActive"
     ).checked = false;
-
 
     showMessage(
         "announcementMessage",
@@ -3407,7 +3265,6 @@ async function hideAnnouncement(){
     );
 }
 
-
 /* =========================================================
    SETTINGS
 ========================================================= */
@@ -3415,7 +3272,6 @@ async function hideAnnouncement(){
 async function loadSettings(){
 
     hideMessage("settingsMessage");
-
 
     const {
         data,
@@ -3429,7 +3285,6 @@ async function loadSettings(){
             .eq("id",1)
             .maybeSingle();
 
-
     if(error){
 
         showMessage(
@@ -3441,30 +3296,25 @@ async function loadSettings(){
         return;
     }
 
-
     if(!data){
         return;
     }
-
 
     document.getElementById(
         "heroTitle"
     ).value =
         data.hero_title || "";
 
-
     document.getElementById(
         "heroDescription"
     ).value =
         data.hero_description || "";
-
 
     document.getElementById(
         "aboutText"
     ).value =
         data.about_text || "";
 }
-
 
 document
     .getElementById("settingsForm")
@@ -3475,7 +3325,6 @@ document
             event.preventDefault();
 
             hideMessage("settingsMessage");
-
 
             const settings = {
 
@@ -3498,7 +3347,6 @@ document
                         .trim()
             };
 
-
             const {
                 error
             } =
@@ -3506,7 +3354,6 @@ document
                     .from("site_settings")
                     .update(settings)
                     .eq("id",1);
-
 
             if(error){
 
@@ -3519,7 +3366,6 @@ document
                 return;
             }
 
-
             showMessage(
                 "settingsMessage",
                 "Website settings saved successfully.",
@@ -3528,7 +3374,6 @@ document
 
         }
     );
-
 
 /* =========================================================
    MODAL CONTROLS
@@ -3547,7 +3392,6 @@ document
         }
     );
 
-
 document.addEventListener(
     "keydown",
     function(event){
@@ -3561,7 +3405,6 @@ document.addEventListener(
     }
 );
 
-
 /* =========================================================
    STARTUP
 ========================================================= */
@@ -3574,7 +3417,6 @@ document.addEventListener(
         await supabaseClient.auth
             .getSession();
 
-
     if(session){
 
         await checkAdmin();
@@ -3584,7 +3426,6 @@ document.addEventListener(
         showLogin();
 
     }
-
 
     supabaseClient.auth.onAuthStateChange(
         async function(event,session){
@@ -3597,7 +3438,6 @@ document.addEventListener(
                 await checkAdmin();
 
             }
-
 
             if(
                 event === "SIGNED_OUT"
